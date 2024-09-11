@@ -1,0 +1,157 @@
+/* Menggunakan font Poppins */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Gradien Latar Belakang */
+.background {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    overflow: hidden;
+    z-index: -1;
+}
+
+/* Logo dan Judul */
+header {
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.logo {
+    height: 80px;
+    margin: 0 20px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Styling untuk Formulir */
+form {
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-section {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #ff7e5f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #feb47b;
+}
+/* CSS Umum untuk Mobile */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+form {
+    max-width: 95%; /* Mengurangi lebar pada perangkat mobile */
+    margin: 20px auto;
+    padding: 15px;
+}
+
+/* Media Queries untuk Perangkat Mobile */
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .form-section {
+        padding: 10px;
+    }
+
+    input, select, textarea {
+        width: 100%; /* Sesuaikan lebar input agar pas di layar mobile */
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .logo {
+        height: 60px; /* Ukuran logo disesuaikan untuk layar kecil */
+    }
+
+    header {
+        padding: 10px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    button {
+        padding: 10px;
+        font-size: 12px;
+    }
+}

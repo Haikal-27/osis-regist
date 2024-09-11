@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment Anggota OSIS - SMAN 2 Singaparna</title>
+    <!-- Import font Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS dan JS lainnya -->
+</head>
+
+<body>
+    <!-- Background with particles -->
+    <div class="background">
+        <canvas id="particles"></canvas>
+    </div>
+
+    <!-- Header with logo and title -->
+    <header>
+        <img src="logo-sekolah.png" alt="Logo Sekolah" class="logo">
+        <img src="logo-osis.png" alt="Logo OSIS" class="logo">
+        <script src="path/to/particles.min.js"></script>
+
+        <h1>RECRUITMENT ANGGOTA OSIS PERIODE 2024/2025</h1>
+        <p>Selamat datang di RECRUITMENT OSIS SMAN 2 Singaparna Periode 2025/2026! Kami membuka kesempatan bagi siswa-siswi yang memiliki semangat kepemimpinan, inovasi, dan rasa tanggung jawab tinggi untuk bergabung dengan Organisasi Siswa Intra Sekolah (OSIS). Sebagai anggota OSIS, kamu akan berperan aktif dalam merencanakan dan melaksanakan berbagai kegiatan sekolah, serta menjadi inspirasi bagi teman-teman sebaya. Isi formulir di bawah ini dengan lengkap dan jujur. Kami menantikan kontribusi terbaikmu!</p>
+    </header>
+
+    <!-- Form Pendaftaran -->
+    <form id="registrationForm">
+        <div class="form-section">
+            <h2>Halaman 1: Data Pribadi</h2>
+            <label for="nama">Nama Lengkap Siswa/i:</label>
+            <input type="text" id="nama" name="nama" required>
+
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" name="kelas" required>
+
+            <label for="alamat">Alamat:</label>
+            <input type="text" id="alamat" name="alamat" required>
+
+            <label for="nohp">No Handphone:</label>
+            <input type="tel" id="nohp" name="nohp" required>
+
+            <button type="button" onclick="nextPage()">Lanjut</button>
+        </div>
+
+        <div class="form-section">
+            <h2>Halaman 2: Alasan dan Divisi</h2>
+            <label for="alasan">Alasan Bergabung Sebagai OSIS:</label>
+            <textarea id="alasan" name="alasan" required></textarea>
+
+            <label for="divisi1">Divisi yang diminati (Divisi 1):</label>
+            <select id="divisi1" name="divisi1" required>
+                <option value="" disabled selected>Pilih Divisi</option>
+                <option value="ketua">Ketua OSIS</option>
+                <option value="wakil">Wakil Ketua OSIS</option>
+                <option value="sekretaris">Sekretaris</option>
+                <option value="sekretaris-arsip">Sekretaris Arsip Data</option>
+                <option value="sekretaris-admin">Sekretaris Administrasi</option>
+                <option value="bendahara-1">Bendahara I</option>
+                <option value="bendahara-2">Bendahara II</option>
+                <option value="sekbid-1">SEKBID 1 (Pembinaan Keimanan dan Ketakwaan terhadap Tuhan Yang Maha Esa)</option>
+                <option value="sekbid-2">SEKBID 2 (Pembinaan Budi Pekerti Luhur atau Akhlak Mulia)</option>
+                <option value="sekbid-3">SEKBID 3 (Pembinaan Kepribadian Unggul, Wawasan, Kebangsaan, dan Bela Negara)</option>
+                <option value="sekbid-4">SEKBID 4 (Pembinaan Prestasi Akademik, Seni, dan Olahraga sesuai Minat dan Bakat)</option>
+                <option value="sekbid-5">SEKBID 5 (Pembinaan Demokrasi, HAM, Pendidikan Politik, Lingkungan Hidup, Kepekaan, dan Toleransi Sosial dalam konteks Masyarakat Plural)</option>
+                <option value="sekbid-6">SEKBID 6 (Pembinaan Kreativitas, Keterampilan, dan Kewirausahaan)</option>
+                <option value="sekbid-7">SEKBID 7 (Pembinaan Kualitas Jasmani, Kesehatan, dan Gizi yang Terdiversifikasi)</option>
+                <option value="sekbid-8">SEKBID 8 (Pembinaan Sastra dan Budaya)</option>
+                <option value="sekbid-9">SEKBID 9 (Pembinaan Teknologi, Informasi dan Komunikasi)</option>
+                <option value="sekbid-10">SEKBID 10 (Pembinaan Komunikasi Dalam Bahasa Inggris)</option>
+            </select>
+
+            <label for="alasan1">Alasan Memilih Divisi 1:</label>
+            <textarea id="alasan1" name="alasan1" required></textarea>
+
+            <label for="divisi2">Divisi yang diminati (Divisi 2):</label>
+            <select id="divisi2" name="divisi2" required>
+                <option value="" disabled selected>Pilih Divisi</option>
+                <option value="ketua">Ketua OSIS</option>
+                <option value="wakil">Wakil Ketua OSIS</option>
+                <option value="sekretaris">Sekretaris</option>
+                <option value="sekretaris-arsip">Sekretaris Arsip Data</option>
+                <option value="sekretaris-admin">Sekretaris Administrasi</option>
+                <option value="bendahara-1">Bendahara I</option>
+                <option value="bendahara-2">Bendahara II</option>
+                <option value="sekbid-1">SEKBID 1 (Pembinaan Keimanan dan Ketakwaan terhadap Tuhan Yang Maha Esa)</option>
+                <option value="sekbid-2">SEKBID 2 (Pembinaan Budi Pekerti Luhur atau Akhlak Mulia)</option>
+                <option value="sekbid-3">SEKBID 3 (Pembinaan Kepribadian Unggul, Wawasan, Kebangsaan, dan Bela Negara)</option>
+                <option value="sekbid-4">SEKBID 4 (Pembinaan Prestasi Akademik, Seni, dan Olahraga sesuai Minat dan Bakat)</option>
+                <option value="sekbid-5">SEKBID 5 (Pembinaan Demokrasi, HAM, Pendidikan Politik, Lingkungan Hidup, Kepekaan, dan Toleransi Sosial dalam konteks Masyarakat Plural)</option>
+                <option value="sekbid-6">SEKBID 6 (Pembinaan Kreativitas, Keterampilan, dan Kewirausahaan)</option>
+                <option value="sekbid-7">SEKBID 7 (Pembinaan Kualitas Jasmani, Kesehatan, dan Gizi yang Terdiversifikasi)</option>
+                <option value="sekbid-8">SEKBID 8 (Pembinaan Sastra dan Budaya)</option>
+                <option value="sekbid-9">SEKBID 9 (Pembinaan Teknologi, Informasi dan Komunikasi)</option>
+                <option value="sekbid-10">SEKBID 10 (Pembinaan Komunikasi Dalam Bahasa Inggris)</option>
+            </select>
+
+            <label for="alasan2">Alasan Memilih Divisi 2:</label>
+            <textarea id="alasan2" name="alasan2" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </div>
+    </form>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
